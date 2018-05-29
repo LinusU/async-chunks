@@ -1,0 +1,18 @@
+{
+  "name": "async-chunks",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/async-chunks",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run prepare && node test",
+    "prepare": "tsc --lib es2015,esnext.asynciterable -d index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^10.1.3",
+    "typescript": "^2.8.3"
+  }
+}
