@@ -1,7 +1,7 @@
-const assert = require('assert')
-const fs = require('fs')
+import assert = require('assert')
+import fs = require('fs')
 
-const asyncChunks = require('./')
+import asyncChunks = require('./')
 
 async function test () {
   {

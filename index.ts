@@ -1,5 +1,10 @@
 import { Readable } from 'stream'
 
+/* Support Node.js 6.x and 8.x */
+if (typeof Symbol.asyncIterator === 'undefined') {
+  Object.assign(Symbol, { asyncIterator: Symbol.for('Symbol.asyncIterator') })
+}
+
 const kState = Symbol('state')
 
 type ActiveState = { kind: 'active', stream: Readable }
